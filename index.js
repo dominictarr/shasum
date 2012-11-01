@@ -1,6 +1,6 @@
 
 var createHash = require('crypto').createHash 
-var buffer = require('buffer').Buffer
+var Buffer = require('buffer').Buffer
 module.exports = function hash (str, alg, format) {
   str = 'string' === typeof str ? str
     : Buffer.isBuffer(str) ? str
