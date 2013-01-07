@@ -1,10 +1,10 @@
 {
-  "name": "sha1sum",
+  "name": "shasum",
   "version": "0.0.1",
-  "homepage": "https://github.com/dominictarr/sha1sum",
+  "homepage": "https://github.com/dominictarr/shasum",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/sha1sum.git"
+    "url": "git://github.com/dominictarr/shasum.git"
   },
   "dependencies": {
   },
