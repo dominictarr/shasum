@@ -5,6 +5,7 @@ module.exports = function hash (str, alg, format) {
   str = 'string' === typeof str ? str
     : Buffer.isBuffer(str) ? str
     : JSON.stringify(str)
-  return createHash(alg || 'sha1').update(str).digest(format || 'hex')
+  return createHash(alg || 'sha1')
+    .update(str, Buffer.isBuffer(str) ? null : 'utf8').digest(format || 'hex')
 }
 
