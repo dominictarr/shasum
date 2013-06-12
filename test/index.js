@@ -8,5 +8,7 @@ equal(hash({}),     'bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f')
 equal(hash([]),     '97d170e1550eee4afc0af065b78cda302a97674c')
 equal(hash(new Buffer('abc')),
                     'a9993e364706816aba3e25717850c26c9cd0d89d')
-
+equal(hash('ab\xff'),'ba5142a8207bd61baddf325088732e71cbfe8eb6')
+equal(hash(new Buffer('ab\xff').toString()),
+                    'ba5142a8207bd61baddf325088732e71cbfe8eb6')
 
