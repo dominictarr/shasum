@@ -11,4 +11,8 @@ equal(hash(new Buffer('abc')),
 equal(hash('ab\xff'),'ba5142a8207bd61baddf325088732e71cbfe8eb6')
 equal(hash(new Buffer('ab\xff').toString()),
                     'ba5142a8207bd61baddf325088732e71cbfe8eb6')
+equal(hash({a:1,b:2,c:3}), hash({c:3,b:2,a:1}))
+equal(hash({a:1,b:2,c:3}), hash({c:3,b:2,a:1}))
+equal(hash({a:1,b:[2,3],c:4}), hash({c:4,b:[2,3],a:1}))
+equal(hash({a:1,b:[2,{c:3,d:4}],e:5}), hash({e:5,b:[2,{d:4,c:3}],a:1}))
 
