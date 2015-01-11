@@ -1,6 +1,6 @@
 {
   "name": "shasum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dominictarr/shasum",
   "repository": {
     "type": "git",
@@ -10,8 +10,7 @@
     "json-stable-stringify": "~0.0.0",
     "sha.js": "~2.3.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "browser": {
     "./index.js": "./browser.js"
   },
@@ -19,5 +18,5 @@
     "test": "node test/index.js && node test/index.js browser"
   },
   "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (http://dominictarr.com)",
-  "license": "MIT"  
+  "license": "MIT"
 }
